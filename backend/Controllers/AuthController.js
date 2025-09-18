@@ -128,7 +128,7 @@ export const logout = (req, res) => {
   res.clearCookie("accessToken", {
     httpOnly: true,
     secure: false, // true in production (HTTPS)
-    sameSite: "Strict",
+    sameSite: "none",
   });
   res.status(200).json({ message: "Logged out successfully" });
 }
