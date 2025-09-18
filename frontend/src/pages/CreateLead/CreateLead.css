@@ -1,0 +1,104 @@
+/* Full page wrapper */
+.create-lead-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 40px 20px;
+}
+
+/* Form container */
+.create-lead-form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.checkbox-group input {
+  margin-right: 8px;
+  accent-color: #3b82f6;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.submit-btn:hover {
+  background: #2563eb;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .create-lead-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

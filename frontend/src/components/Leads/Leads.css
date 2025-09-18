@@ -1,0 +1,30 @@
+/* Leads.css */
+
+/* Container for the AG Grid */
+.ag-grid-container {
+  height: 500px;       /* adjust grid height */
+  width: 100%;         /* full width */
+  margin: 20px auto;   /* optional centering */
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: style grid headers */
+.ag-theme-alpine .ag-header-cell-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Optional: style rows */
+.ag-theme-alpine .ag-row {
+  font-size: 14px;
+}
+
+/* Highlight row on hover */
+.ag-theme-alpine .ag-row:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style pagination panel */
+.ag-theme-alpine .ag-paging-panel {
+  font-size: 13px;
+}
