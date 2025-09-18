@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:8080/auth/logout", {
+      await fetch("https://lead-management-bend.onrender.com/auth/logout", {
         method: "POST",
         credentials: "include",
       });
