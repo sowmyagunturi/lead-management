@@ -14,7 +14,7 @@ const Leads = () => {
     if (!window.confirm("Are you sure you want to delete this lead?")) return;
 
     try {
-      const response = await fetch(`https://lead-management-bend.onrender.com/leads/${id}`, {
+      const response = await fetch(`https://lead-management-a.onrender.com/leads/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
@@ -34,7 +34,7 @@ const onCellValueChanged = async (params) => {
   console.log("Updated row:", updatedData);
 
   try {
-    const response = await fetch(`https://lead-management-bend.onrender.com/leads/${updatedData._id}`, {
+    const response = await fetch(`https://lead-management-a.onrender.com/leads/${updatedData._id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
@@ -124,7 +124,7 @@ const onCellValueChanged = async (params) => {
   useEffect(() => {
     const fetchLeads = async () => {
       try {
-        const response = await fetch("http://localhost:8080/leads/", {
+        const response = await fetch("https://lead-management-a.onrender.com/leads/", {
           method: "GET",
           credentials: "include",
         });
