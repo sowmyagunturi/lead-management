@@ -47,7 +47,7 @@ const AddLeadForm = ({ onLeadAdded }) => {
         lead_value: formData.lead_value ? Number(formData.lead_value) : 0,
       };
 
-      const response = await fetch("http://localhost:8080/leads", {
+      const response = await fetch("https://lead-management-bend.onrender.com/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
