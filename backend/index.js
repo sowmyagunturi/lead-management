@@ -13,9 +13,10 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "https://lead-management-n.onrender.com",
+  origin: true,  // allow all
   credentials: true
 }));
+
 
 app.use('/auth',AuthRoute);
 app.use('/leads',LeadRoute);
